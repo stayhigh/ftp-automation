@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SFTP_USER=
+SFTP_PASSWORD=
+SFTP_FILE_PATH=
+
+sshpass -p $SFTP_PASSWORD $SFTP_USER@ftp7.realtek.com <<EOF
+get $SFTP_FILE_PATH
+EOF
